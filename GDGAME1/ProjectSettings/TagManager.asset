@@ -8,6 +8,14 @@ TagManager:
   - Enemy
   - CamShake
   - Invulnerable
+  - BlueCircle
+  - BlueBullet
+  - BluePlayer
+  - GreenCirlce
+  - GreenBullet
+  - GreenEnemy
+  - BlueEnemy
+  - GreenPlayer
   layers:
   - Default
   - TransparentFX

@@ -13,8 +13,21 @@ public class colourchange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
-       
+
+        if (FindObjectOfType<TopDownMove>().Blue == true)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+        }
+        if (FindObjectOfType<TopDownMove>().Green== true)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+        }
+
+
+
+
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

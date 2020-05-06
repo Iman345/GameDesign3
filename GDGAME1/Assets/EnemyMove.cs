@@ -7,7 +7,8 @@ public class EnemyMove : MonoBehaviour
 {
     private Rigidbody2D rigb;
    public GameObject Player;
-    public float EnemySpeed;
+    private float EnemySpeed;
+    public float EnemySpeedRange1, EnemySpeedRange2;
    private Vector3 direction;
     public GameObject Explode;
 
@@ -24,7 +25,7 @@ public class EnemyMove : MonoBehaviour
         rigb = GetComponent<Rigidbody2D>();
        // Player = GameObject.Find("Player");
 
-        EnemySpeed = Random.Range(1f, 3f);
+        EnemySpeed = Random.Range(EnemySpeedRange1, EnemySpeedRange2);
 
         score = 0;
     }
@@ -81,16 +82,34 @@ public class EnemyMove : MonoBehaviour
   //  }
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player"|| other.gameObject.tag == "GreenPlayer" || other.gameObject.tag == "BluePlayer")
         {
             Instantiate(Explode, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
 
         }
-        if (other.gameObject.tag == "Bullet")
+        if (other.gameObject.tag == "Bullet" && this.gameObject.tag =="Enemy")
         {
 
            
+            Instantiate(Explode, transform.position, Quaternion.identity);
+            Instantiate(Points, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+            FindObjectOfType<TopDownMove>().EnemyHit();
+        }
+        if (other.gameObject.tag == "BlueBullet" && this.gameObject.tag == "BlueEnemy")
+        {
+
+
+            Instantiate(Explode, transform.position, Quaternion.identity);
+            Instantiate(Points, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+            FindObjectOfType<TopDownMove>().EnemyHit();
+        }
+        if (other.gameObject.tag == "GreenBullet" && this.gameObject.tag == "GreenEnemy")
+        {
+
+
             Instantiate(Explode, transform.position, Quaternion.identity);
             Instantiate(Points, transform.position, Quaternion.identity);
             Destroy(this.gameObject);

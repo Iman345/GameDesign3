@@ -2,29 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawn : MonoBehaviour
+public class EnemySpawnTwo : MonoBehaviour
 {
     public bool Spawn;
     public Transform[] spawnPos;
     public GameObject[] FlyingEnemies;
     private int RandSpawn;
     private int RandEnemy;
-   
+
 
     // Use this for initialization
     void Start()
     {
-        Spawn = true;
+        Spawn = false;
         InvokeRepeating("SpawnEnemies", 0f, 1f);
 
     }
 
     private void Update()
     {
-       if (FindObjectOfType<TopDownMove>().isgameOver == true)
-       {
-                Spawn = false;
-       }
+        if (FindObjectOfType<TopDownMove>().isgameOver == true)
+        {
+            Spawn = false;
+        }
+
+        if(FindObjectOfType<EnemySpawn>().Spawn == false)
+        {
+            Spawn = true;
+        }
     }
 
     void SpawnEnemies()
@@ -38,3 +43,4 @@ public class EnemySpawn : MonoBehaviour
         }
     }
 }
+

@@ -20,9 +20,11 @@ public class TopDownMove : MonoBehaviour
     public int score;
     public AudioSource DeadSound;
     public AudioSource Ouch;
+    public string PlayerColour;
     // public GameObject Points;
     public Text Scoretxt;
-
+    public bool Blue;
+    public bool Green;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,9 @@ public class TopDownMove : MonoBehaviour
         Over.SetActive(false);
         score = 0;
         Scoretxt.text = "" + score;
+        PlayerColour = "White";
+        Green = false;
+        Blue = false;
     }
 
     // Update is called once per frame
@@ -59,9 +64,18 @@ public class TopDownMove : MonoBehaviour
         if (PlayerHit == true)
         {
             GetComponent<SpriteRenderer>().color = Color.red;
+            PlayerColour = "Red";
             StartCoroutine(NormalColour());
         }
 
+        if (Blue == true)
+        {
+            BluePhase();
+        }
+        if(Green == true)
+        {
+            GreenPhase();
+        }
          
 
     }
@@ -115,6 +129,7 @@ public class TopDownMove : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         GetComponent<SpriteRenderer>().color = Color.white;
+        PlayerColour = "White";
         PlayerHit= false;
     }
 
@@ -129,6 +144,25 @@ public class TopDownMove : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         Over.SetActive(true);
         
+    }
+
+    
+
+   public void BluePhase()
+  {
+   GetComponent<SpriteRenderer>().color = Color.blue;
+       this.gameObject.tag = "BluePlayer";
+    
+      PlayerColour = "Blue";
+        Green = false;
+   }
+    public void GreenPhase()
+    {
+        GetComponent<SpriteRenderer>().color = Color.green;
+        this.gameObject.tag = "GreenPlayer";
+      
+        PlayerColour = "Green";
+        Blue = false;
     }
 
 }
