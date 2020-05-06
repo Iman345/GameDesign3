@@ -96,8 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feb1c6c00ddcb3a45bf89f7e30f21b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeadSound: {fileID: 3605924814657601465, guid: 45d2ff09e3a1ebd469b2ef965be1f64b,
-    type: 3}
 --- !u!50 &5408555260603664281
 Rigidbody2D:
   serializedVersion: 4
@@ -129,7 +127,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.000000007450581, y: -0.009865701}

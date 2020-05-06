@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 58063332}
   m_Layer: 0
   m_Name: Enemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.2696514, y: 0.08988559}
@@ -165,5 +165,4 @@ MonoBehaviour:
   Player: {fileID: 6065581492213603999, guid: e9353946cff83cc4995ede68ecfa43ff, type: 3}
   EnemySpeed: 5
   Explode: {fileID: 3150027934051843813, guid: d4c7732fdfd158b4f8f15b7d55696a8e, type: 3}
-  DeadSound: {fileID: 3605924814657601465, guid: 45d2ff09e3a1ebd469b2ef965be1f64b,
-    type: 3}
+  Points: {fileID: 9100132882628494084, guid: 189d7df3158aa7f4ba60bcb2b8033d6d, type: 3}

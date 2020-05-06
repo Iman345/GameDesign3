@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyMove : MonoBehaviour
 {
@@ -9,7 +10,13 @@ public class EnemyMove : MonoBehaviour
     public float EnemySpeed;
    private Vector3 direction;
     public GameObject Explode;
-  
+
+    public GameObject Points;
+    public Text Scoretxt;
+
+    public int score;
+
+
 
     // Use this for initialization
     void Start()
@@ -18,12 +25,23 @@ public class EnemyMove : MonoBehaviour
        // Player = GameObject.Find("Player");
 
         EnemySpeed = Random.Range(1f, 3f);
+
+        score = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
         MoveEnemies();
+
+        if (FindObjectOfType<TopDownMove>().isgameOver == true)
+        {
+            Destroy(this.gameObject);
+            Instantiate(Explode, transform.position, Quaternion.identity);
+
+        }
     }
 
     
@@ -41,24 +59,47 @@ public class EnemyMove : MonoBehaviour
             
     }
 
+
+
    
-    private void OnCollisionEnter2D(Collision2D other)
+  //  public void OnCollisionEnter2D(Collision2D other)
+   // {
+   //     if (other.gameObject.tag == "Player")
+  //      {
+  //          Instantiate(Explode, transform.position, Quaternion.identity);
+     //       Destroy(this.gameObject);
+///
+  //      }
+  //      if (other.gameObject.tag == "Bullet")
+  //      {
+
+  //         
+   //         Instantiate(Explode, transform.position, Quaternion.identity);
+   //         Destroy(this.gameObject);
+//
+  //      }
+  //  }
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-
             Instantiate(Explode, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
 
         }
         if (other.gameObject.tag == "Bullet")
         {
+
            
             Instantiate(Explode, transform.position, Quaternion.identity);
+            Instantiate(Points, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
-
+            FindObjectOfType<TopDownMove>().EnemyHit();
         }
     }
+
+
+
 }
 
 

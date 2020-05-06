@@ -9,18 +9,22 @@ public class EnemySpawn : MonoBehaviour
     public GameObject[] FlyingEnemies;
     private int RandSpawn;
     private int RandEnemy;
-    
+   
 
     // Use this for initialization
     void Start()
     {
         Spawn = true;
         InvokeRepeating("SpawnEnemies", 0f, 1f);
+
     }
 
     private void Update()
     {
-        
+       if (FindObjectOfType<TopDownMove>().isgameOver == true)
+       {
+                Spawn = false;
+       }
     }
 
     void SpawnEnemies()
