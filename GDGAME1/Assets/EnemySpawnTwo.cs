@@ -25,16 +25,18 @@ public class EnemySpawnTwo : MonoBehaviour
         {
             Spawn = false;
         }
-
-        if(FindObjectOfType<EnemySpawn>().Spawn == false)
+        if(FindObjectOfType<Timer>().phase2 == true)
         {
             Spawn = true;
         }
+       
+     
+
     }
 
     void SpawnEnemies()
     {
-        if (Spawn)
+        if (Spawn==true)
         {
             RandSpawn = Random.Range(0, spawnPos.Length);
             RandEnemy = Random.Range(0, FlyingEnemies.Length);

@@ -114,11 +114,11 @@ public class TopDownMove : MonoBehaviour
    // }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag =="Enemy")
+        if (other.gameObject.tag =="Enemy"|| other.gameObject.tag == "BlueEnemy"||other.gameObject.tag == "GreenEnemy")
         {
             lives--;
             Livestxt.text = " " + lives;
-            Debug.Log("Hit");
+           // Debug.Log("Hit");
 
             PlayerHit = true;
             Ouch.Play();
