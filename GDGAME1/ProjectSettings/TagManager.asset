@@ -16,6 +16,9 @@ TagManager:
   - GreenEnemy
   - BlueEnemy
   - GreenPlayer
+  - Boss
+  - PortalLeft
+  - PortalRight
   layers:
   - Default
   - TransparentFX
@@ -61,4 +64,7 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 135058453
+    locked: 0
+  - name: Villain
+    uniqueID: 3095091197
     locked: 0

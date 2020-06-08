@@ -58,6 +58,14 @@ public class buttons : MonoBehaviour
     {
         SceneManager.LoadScene("TopDown");
     }
+    public void LeveSnowOne()
+    {
+        SceneManager.LoadScene("SnowmanOne");
+    }
+    public void LeveSnowman()
+    {
+        SceneManager.LoadScene("Snowman");
+    }
     public void Quit()
     {
         Debug.Log("Quit");

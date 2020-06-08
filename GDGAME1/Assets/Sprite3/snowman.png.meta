@@ -1,0 +1,271 @@
+fileFormatVersion: 2
+guid: a57696ab865b8ef4d8740518f3ebeae9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6543393951714099525
+    second: snowman_0
+  - first:
+      213: 4993157341271129211
+    second: snowman_1
+  - first:
+      213: 1631610037228606869
+    second: snowman_2
+  - first:
+      213: 2552953138554624697
+    second: snowman_3
+  - first:
+      213: 2750744271760862970
+    second: snowman_4
+  - first:
+      213: -4851621857897864436
+    second: snowman_5
+  - first:
+      213: 511526136068898541
+    second: snowman_6
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: snowman_0
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 557
+        width: 420
+        height: 373
+      alignment: 9
+      pivot: {x: 0.48368508, y: 0.059104778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b253e7c5106c42347916f77475b8321c
+      internalID: -6543393951714099525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman_1
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 561
+        width: 656
+        height: 493
+      alignment: 9
+      pivot: {x: 0.4059906, y: 0.032064132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45edd4650078d684c85a829def23e8c8
+      internalID: 4993157341271129211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman_2
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 528
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31edf1edf1e93284c844ab14a8e558d7
+      internalID: 1631610037228606869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman_3
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 243
+        width: 115
+        height: 139
+      alignment: 9
+      pivot: {x: 0.30138418, y: 0.8615099}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645aa6ca90ef8464baf7afffd8caf122
+      internalID: 2552953138554624697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman_4
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 222
+        width: 404
+        height: 228
+      alignment: 9
+      pivot: {x: 0.047706377, y: 0.94078785}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05773cbae24b83b4c8c6207731703607
+      internalID: 2750744271760862970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman_5
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 47
+        width: 404
+        height: 229
+      alignment: 9
+      pivot: {x: 0.06466705, y: 0.91891545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495f724a544fba5449833a3e7fbdd553
+      internalID: -4851621857897864436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snowman_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 86
+        width: 115
+        height: 139
+      alignment: 9
+      pivot: {x: 0.36096895, y: 0.86150956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e268331e31117c498af1d87400d1648
+      internalID: 511526136068898541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

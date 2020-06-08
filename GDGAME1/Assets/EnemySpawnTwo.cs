@@ -15,7 +15,7 @@ public class EnemySpawnTwo : MonoBehaviour
     void Start()
     {
         Spawn = false;
-        InvokeRepeating("SpawnEnemies", 0f, 1f);
+        InvokeRepeating("SpawnEnemies", 0f, 2.5f);
 
     }
 

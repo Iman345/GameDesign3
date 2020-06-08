@@ -15,16 +15,16 @@ public class EnemySpawn : MonoBehaviour
     void Start()
     {
         Spawn = true;
-        InvokeRepeating("SpawnEnemies", 0f, 1f);
+        InvokeRepeating("SpawnEnemies", 0f, 3f);
 
     }
 
     private void Update()
     {
-       if (FindObjectOfType<TopDownMove>().isgameOver == true)
-       {
-                Spawn = false;
-       }
+     //  if (FindObjectOfType<TopDownMove>().isgameOver == true)
+    //  // {
+           //     Spawn = false;
+      // }
     }
 
     void SpawnEnemies()
